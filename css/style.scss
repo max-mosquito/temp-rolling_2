@@ -96,6 +96,7 @@ h2{
 	align-items: flex-start;
 	transform: translateX(-100%);
 	transition: 0.3s;
+	padding-bottom: 30px;
 	&.active{
 		transform: translateX(0);
 	}
