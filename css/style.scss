@@ -1737,6 +1737,7 @@ h2{
 .catalog_main_showcase_saidbar {
 }
 .catalog_main_showcase_saidbar_list {
+	margin-bottom: 22px;
 	ul{
 		background-color: #F1F0F0;
 		border-radius: 4px;
@@ -1757,11 +1758,150 @@ h2{
 	}
 }
 .catalog_main_showcase_saidbar_filters {
+	background-color: #F1F0F0;
+	border-radius: 4px;
+	padding: 22px 20px;
 }
-.catalog_main_showcase_saidbar_filters_item {
+.catalog_main_showcase_saidbar_filters_list {
+	margin-bottom: 15px;
 }
-.catalog_arm_filter {
+.catalog_saidbar_filters_item {
+	margin-bottom: 15px;
+	&:last-child{
+		margin: 0;
+	}
 }
+.catalog_saidbar_filters_item_title {
+	margin-bottom: 3px;
+	p{
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 21px;
+	}
+}
+.catalog_saidbar_filters_item_content {
+	position: relative;
+}
+.catalog_saidbar_filters_item_content_header {
+	p{
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 18px;
+		color: rgba(0, 0, 0, 0.5);
+		width: 100%;
+		height: 48px;
+		background-color: $w;
+		display: flex;
+		align-items: center;
+		padding-left: 16px;
+		position: relative;
+		cursor: pointer;
+		&:after{
+			position: absolute;
+			content: "";
+			width: 14px;
+			height: 7px;
+			top: 50%;
+			transform: translateY(-50%);
+			right: 20px;
+			background: url("../img/chevron_down_blue.svg") center/contain no-repeat;
+		}
+	}
+}
+.catalog_saidbar_filters_item_content_list {
+	border-radius: 4px;
+	border: 1px solid rgba(0, 0, 0, 0.25);
+	background-color: $w;
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 100%;
+	width: 100%;
+	z-index: 1;
+	li{
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 21px;
+		cursor: pointer;
+		padding: 5px 20px;
+		&.selected{
+			background-color: #eee;
+		}
+	}
+	&.active{
+		display: block;
+	}
+}
+.catalog_saidbar_isHave {
+	margin-bottom: 22px;
+}
+.catalog_saidbar_isHave_title {
+	margin-bottom: 5px;
+	p{
+		font-size: 14px;
+		line-height: 1.5;
+	}
+}
+.catalog_saidbar_isHave_inputs {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+.catalog_saidbar_isHave_inputs_item {
+	label{
+		font-size: 14px;
+		line-height: 1.5;
+		position: relative;
+		padding-left: 21px;
+		cursor: pointer;
+		&:before{
+			position: absolute;
+			content: "";
+			width: 11px;
+			height: 11px;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			background-color: $w;
+			transition: 0.3s;
+			margin-top: -2px;
+		}
+		&.active{
+			&:before{
+				background-color: $bl;
+			}
+		}
+	}
+	input{
+		position: absolute;
+		top: 0;
+		left: 0;
+		visibility: hidden;
+		opacity: 0;
+		z-index: -1;
+		&:checked + label:before{
+			background-color: $bl;
+		}
+	}
+}
+.catalog_saidbar_btns {
+	margin-bottom: 12px;
+}
+.catalog_saidbar_btn {
+	width: 100%;
+	text-transform: none;
+	height: 48px;
+}
+.catalog_saidbar_reset{
+	p{
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 21px;
+		text-align: center;
+		color: $bl;
+		text-decoration: underline;
+	}
+}
+
 .catalog_main_showcase_content {
 }
 .catalog_main_showcase_content_header {
@@ -1799,7 +1939,7 @@ h2{
 	.catalog_main_header_sort_current{
 		p{
 			font-size: 10px;
-		line-height: 1.2;
+			line-height: 1.2;
 		}
 	}
 }
@@ -1845,6 +1985,9 @@ h2{
 		li{
 			padding: 7px 30px;
 			cursor: pointer;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 21px;
 			&.selected{
 				background-color: #eee;
 			}
@@ -2146,8 +2289,13 @@ h2{
 		}
 		.catalog_main_showcase_content_card_pic{
 			margin: 0 30px 0 0;
-			width: 70px;
-			// height: 60px;
+			// width: 70px;
+			height: 60px;
+			flex: 0 0 70px;
+			img{
+				width: 100%;
+				height: 100%;
+			}
 		}
 		.catalog_main_showcase_content_card_content{
 			display: grid;

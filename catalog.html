@@ -93,7 +93,7 @@
                <a href="#"><img src="img/user.svg" alt=" "></a>
             </div>
             <div class="header_main_cart">
-               <a href="#">
+               <a href="cart.html">
                   <img src="img/cart_black.svg" alt=" ">
                   <span class="quantity_cart">3</span>
                </a>
@@ -139,8 +139,88 @@
                   </ul>
                </div>
                <div class="catalog_main_showcase_saidbar_filters">
-                  <div class="catalog_main_showcase_saidbar_filters_item catalog_arm_filter">
-                     
+                  <div class="catalog_main_showcase_saidbar_filters_list">
+                     <div class="catalog_saidbar_filters_item">
+                        <div class="catalog_saidbar_filters_item_title">
+                           <p>Класс арматуры</p>
+                        </div>
+                        <div class="catalog_saidbar_filters_item_content">
+                           <div class="catalog_saidbar_filters_item_content_header">
+                              <p>Выбрать</p>
+                           </div>
+                           <ul class="catalog_saidbar_filters_item_content_list">
+                              <li class="selected">Класс 1</li>
+                              <li>Класс 2</li>
+                              <li>Класс 3</li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="catalog_saidbar_filters_item">
+                        <div class="catalog_saidbar_filters_item_title">
+                           <p>Диаметр</p>
+                        </div>
+                        <div class="catalog_saidbar_filters_item_content">
+                           <div class="catalog_saidbar_filters_item_content_header">
+                              <p>Выбрать</p>
+                           </div>
+                           <ul class="catalog_saidbar_filters_item_content_list">
+                              <li class="selected">Диаметр 1</li>
+                              <li>Диаметр 2</li>
+                              <li>Диаметр 3</li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="catalog_saidbar_filters_item">
+                        <div class="catalog_saidbar_filters_item_title">
+                           <p>Сталь</p>
+                        </div>
+                        <div class="catalog_saidbar_filters_item_content">
+                           <div class="catalog_saidbar_filters_item_content_header">
+                              <p>Выбрать</p>
+                           </div>
+                           <ul class="catalog_saidbar_filters_item_content_list">
+                              <li class="selected">Сталь 1</li>
+                              <li>Сталь 2</li>
+                              <li>Сталь 3</li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="catalog_saidbar_filters_item">
+                        <div class="catalog_saidbar_filters_item_title">
+                           <p>ГОСТ</p>
+                        </div>
+                        <div class="catalog_saidbar_filters_item_content">
+                           <div class="catalog_saidbar_filters_item_content_header">
+                              <p>Выбрать</p>
+                           </div>
+                           <ul class="catalog_saidbar_filters_item_content_list">
+                              <li class="selected">ГОСТ 1</li>
+                              <li>ГОСТ 2</li>
+                              <li>ГОСТ 3</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="catalog_saidbar_isHave">
+                     <div class="catalog_saidbar_isHave_title">
+                        <p>Наличие</p>
+                     </div>
+                     <div class="catalog_saidbar_isHave_inputs">
+                        <div class="catalog_saidbar_isHave_inputs_item">
+                           <input type="radio" name="isHave" id="isHave1" class="catalog_filter_radio" value="0">
+                           <label for="isHave1">В наличии</label>
+                        </div>
+                        <div class="catalog_saidbar_isHave_inputs_item">
+                           <input type="radio" name="isHave" id="isHave2" class="catalog_filter_radio" value="1">
+                           <label for="isHave2">Под заказ</label>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="catalog_saidbar_btns">
+                     <button class="btn catalog_saidbar_btn">Показать</button>
+                  </div>
+                  <div class="catalog_saidbar_reset">
+                     <p>Сбросить фильтры</p>
                   </div>
                </div>
             </asaid>
@@ -560,6 +640,8 @@
    <script src="js/catalog_view_dropdown.js"></script>
    <script src="js/catalog_slider.js"></script>
    <script src="js/catalog_calc.js"></script>
+   <script src="js/catalog_dropdown_filter_pc.js"></script>
+   <!-- <script src="js/catalog_filter_radio.js"></script> -->
    <script src="js/script.js"></script>
 </body>
 </html>
