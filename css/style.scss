@@ -476,37 +476,36 @@ h2{
 	grid-template-columns: repeat(5, auto);
 	padding-top: 15px;
 	padding-bottom: 15px;
-	li{
+}
+.header_main_menu_list_item{
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px;
+	text-transform: uppercase;
+	border-right: 2px solid $bl;
+	text-align: center;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	&:last-child{
+		border: none;
+	}
+	.header_main_menu_list_item_link{
 		font-size: 16px;
 		font-weight: 700;
 		line-height: 24px;
 		text-transform: uppercase;
-		border-right: 2px solid $bl;
-		text-align: center;
-		padding-top: 12px;
-		padding-bottom: 12px;
-		&:last-child{
-			border: none;
-		}
-		a{
-			font-size: 16px;
-			font-weight: 700;
-			line-height: 24px;
-			text-transform: uppercase;
-			position: relative;
-		}
-		&.active{
-			background-color: $bl;
-			a{
-				color:$w;
-			}
+		position: relative;
+	}
+	&.active{
+		background-color: $bl;
+		.header_main_menu_list_item_link{
+			color:$w;
 		}
 	}
 }
 .catalog{
-	cursor: pointer;
 	position: relative;
-	a{
+	.header_main_menu_list_item_link{
 		span{
 			display: block;
 			width: 22px;
@@ -518,6 +517,68 @@ h2{
 			transform: translateY(-50%);
 		}
 	}
+	&:hover{
+		.catalog_hover{
+			z-index: 1;
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}
+.catalog_hover{
+	position: absolute;
+	top: 100%;
+	left: 0;
+	padding-top: 35px;
+	width: 100%;
+	z-index: -1;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.3s;
+}
+.catalog_hover_list{
+	background-color: #F1F0F0;
+	padding: 30px 15px 30px 30px;
+}
+.catalog_hover_list_item{
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px;
+	text-align: left;
+	margin-bottom: 14px;
+	position: relative;
+	padding-left: 25px;
+	text-transform: uppercase;
+	cursor: pointer;
+	&:last-child{
+		margin: 0;
+	}
+	&:before{
+		position: absolute;
+		content: "";
+		width: 7px;
+		height: 10px;
+		top: 7px;
+		left: 0;
+		background: url("../img/chevron_right_blue.svg") center/contain no-repeat;
+	}
+	&:hover{
+		.catalog_hover_list_inner{
+			display: block;
+		}
+	}
+}
+.catalog_hover_list_inner {
+	display: none;
+}
+.catalog_hover_list_item_inner {
+	padding-left: 20px;
+}
+.catalog_hover_list_item_inner_link{
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	text-transform: uppercase;
 }
 // ----end header----
 // ----start main----

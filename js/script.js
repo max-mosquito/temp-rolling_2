@@ -13,3 +13,8 @@ mobMenuClose.addEventListener('click', () => {
    document.body.classList.remove('lock');
 })
 
+//-------------
+const catalog = document.querySelector('.catalog');
+catalog.addEventListener('click', (e) => {
+   console.log(e.target);
+})

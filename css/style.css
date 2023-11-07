@@ -546,7 +546,8 @@ h2 {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-.header_main_menu_list li {
+
+.header_main_menu_list_item {
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
@@ -556,28 +557,27 @@ h2 {
   padding-top: 12px;
   padding-bottom: 12px;
 }
-.header_main_menu_list li:last-child {
+.header_main_menu_list_item:last-child {
   border: none;
 }
-.header_main_menu_list li a {
+.header_main_menu_list_item .header_main_menu_list_item_link {
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
   text-transform: uppercase;
   position: relative;
 }
-.header_main_menu_list li.active {
+.header_main_menu_list_item.active {
   background-color: #2E5AF0;
 }
-.header_main_menu_list li.active a {
+.header_main_menu_list_item.active .header_main_menu_list_item_link {
   color: #ffffff;
 }
 
 .catalog {
-  cursor: pointer;
   position: relative;
 }
-.catalog a span {
+.catalog .header_main_menu_list_item_link span {
   display: block;
   width: 22px;
   height: 17px;
@@ -587,6 +587,71 @@ h2 {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+.catalog:hover .catalog_hover {
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.catalog_hover {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding-top: 35px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.catalog_hover_list {
+  background-color: #F1F0F0;
+  padding: 30px 15px 30px 30px;
+}
+
+.catalog_hover_list_item {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  margin-bottom: 14px;
+  position: relative;
+  padding-left: 25px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.catalog_hover_list_item:last-child {
+  margin: 0;
+}
+.catalog_hover_list_item:before {
+  position: absolute;
+  content: "";
+  width: 7px;
+  height: 10px;
+  top: 7px;
+  left: 0;
+  background: url("../img/chevron_right_blue.svg") center/contain no-repeat;
+}
+.catalog_hover_list_item:hover .catalog_hover_list_inner {
+  display: block;
+}
+
+.catalog_hover_list_inner {
+  display: none;
+}
+
+.catalog_hover_list_item_inner {
+  padding-left: 20px;
+}
+
+.catalog_hover_list_item_inner_link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
 }
 
 .main {
