@@ -109,7 +109,8 @@ h2 {
           transform: translateX(-100%);
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  padding-bottom: 30px;
+  padding-bottom: 70px;
+  background-color: transparent;
 }
 .mob_menu.active {
   -webkit-transform: translateX(0);
@@ -176,6 +177,11 @@ h2 {
 }
 
 .mob_menu_bottom {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -184,10 +190,18 @@ h2 {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 20px 0 27px;
+  padding: 20px 0 24px;
   width: 100%;
+  display: none;
 }
 
+@media (max-width: 767px) {
+  .mob_menu_bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 .mob_menu_bottom_cart a {
   position: relative;
 }
@@ -7734,4 +7748,79 @@ h2 {
 .detail_pd p a {
   display: inline-block;
   text-decoration: underline;
+}
+
+.pre_catalog {
+  padding: 0 20px;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 100%;
+}
+
+.pre_catalog_title {
+  margin-bottom: 25px;
+}
+.pre_catalog_title p {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.pre_catalog_list {
+  background-color: #F1F0F0;
+  border-radius: 4px;
+  padding: 13px 40px 13px 45px;
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.pre_catalog_list_item {
+  margin-bottom: 26px;
+  position: relative;
+}
+.pre_catalog_list_item:last-child {
+  margin: 0;
+}
+.pre_catalog_list_item:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 7px;
+  height: 13px;
+  background: url("../img/chevron_right_blue.svg") center/contain no-repeat;
+}
+
+.pre_catalog_list_item_link {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.pre_catalog_bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
 }

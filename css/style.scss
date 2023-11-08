@@ -80,6 +80,7 @@ h2{
 .header {
 	position: relative;
 }
+
 .mob_menu {
 	position: absolute;
 	top: 0;
@@ -96,7 +97,8 @@ h2{
 	align-items: flex-start;
 	transform: translateX(-100%);
 	transition: 0.3s;
-	padding-bottom: 30px;
+	padding-bottom: 70px;
+	background-color: transparent;
 	&.active{
 		transform: translateX(0);
 	}
@@ -138,11 +140,22 @@ h2{
 	}
 }
 .mob_menu_bottom {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	background-color: $w;
+	z-index: 1;
 	display: flex;
 	justify-content: space-around;
 	align-items: flex-start;
-	padding: 20px 0 27px;
+	padding: 20px 0 24px;
 	width: 100%;
+	display: none;
+}
+@media (max-width:767px) {
+	.mob_menu_bottom{
+		display: flex;
+	}
 }
 .mob_menu_bottom-home {
 }
@@ -6964,3 +6977,69 @@ h2{
 	}
 }
 // ----end popup_detail---
+// ----start pre_catalog---- 
+.pre_catalog {
+	padding: 0 20px;
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	height: 100%;
+}
+.pre_catalog_title {
+	margin-bottom: 25px;
+	p{
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 30px;
+		text-transform: uppercase;
+	}
+}
+.pre_catalog_list {
+	background-color: #F1F0F0;
+	border-radius: 4px;
+	padding: 13px 40px 13px 45px;
+	width: 100%;
+	flex: 1;
+}
+.pre_catalog_list_item {
+	margin-bottom: 26px;
+	position: relative;
+	&:last-child{
+		margin: 0;
+	}
+	&:after{
+		position: absolute;
+		content: "";
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 7px;
+		height: 13px;
+		background: url("../img/chevron_right_blue.svg") center/contain no-repeat;
+	}
+}
+.pre_catalog_list_item_link {
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px;
+	text-transform: uppercase;
+}
+.pre_catalog_bottom {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+
+}
+.pre_catalog_bottom-home {
+}
+.pre_catalog_bottom_cards {
+}
+.pre_catalog_bottom_user {
+}
+.pre_catalog_bottom_cart {
+}
+.quantity_cart {
+}
+// ----end pre_catalog---- 
