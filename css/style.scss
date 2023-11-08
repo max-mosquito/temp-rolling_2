@@ -1499,11 +1499,6 @@ h2{
 .footer {
 	padding-bottom: 96px;
 }
-@media (max-width:575px){
-	.footer{
-		padding-bottom: 60px;
-	}
-}
 .footer_wrap {
 	display: grid;
 	grid-template-columns: repeat(3, auto);
@@ -2673,6 +2668,12 @@ h2{
 // ----end leaders----
 // ----start calc---- 
 .calc {
+	margin-bottom: 170px;
+}
+@media (max-width:575px) {
+	.calc{
+		margin-bottom: 54px;
+	}
 }
 .calc_wrap {
 }
@@ -2844,6 +2845,15 @@ h2{
 	}
 }
 .calc_map {
+	width: 100%;
+	height: 320px;
+	// margin-left: -20px;
+	// margin-right: -20px;
+}
+@media (max-width:575px) {
+	.calc_map{
+		height: 260px;
+	}
 }
 // ----end calc---- 
 // ----start breadcrumbs----
