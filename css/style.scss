@@ -184,7 +184,7 @@ h2{
 	padding: 0 20px;
 }
 .header_top_wrap {
-	padding-top: 20px;
+	padding-top: 25px;
 	padding-bottom: 16px;
 	display: flex;
 	justify-content: flex-end;
@@ -194,6 +194,7 @@ h2{
 	margin-right: auto;
 	display: flex;
 	align-items: center;
+	padding-left: 25px;
 }
 .header_top_geo_pic {
 	width: 13px;
@@ -281,7 +282,7 @@ h2{
 .header_main_wrap {
 	display: flex;
 	align-items: center;
-	padding-top: 25px;
+	padding-top: 35px;
 	padding-bottom: 50px;
 	background-color: #fff;
 }
@@ -314,6 +315,7 @@ h2{
 	display: flex;
 	align-items: center;
 	margin-right: 26px;
+	padding-left: 25px;
 }
 @media (max-width:1200px) {
 	.header_main_logo{
@@ -408,6 +410,13 @@ h2{
 .header_main_user {
 	margin-left: auto;
 	margin-right: 46px;
+	a{
+		width: 23px;
+		height: 27px;
+		img{
+			width: 100%;
+		}
+	}
 }
 @media (max-width:1200px) {
 	.header_main_user{
@@ -424,6 +433,11 @@ h2{
 	margin-right: 50px;
 	a{
 		position: relative;
+		width: 28px;
+		height: 27px;
+		img{
+			width: 100%;
+		}
 	}
 }
 @media (max-width:1200px){
@@ -490,6 +504,7 @@ h2{
 	grid-template-columns: repeat(5, auto);
 	padding-top: 15px;
 	padding-bottom: 15px;
+	padding-left: 25px;
 }
 .header_main_menu_list_item{
 	font-size: 16px;
@@ -600,6 +615,7 @@ h2{
 	padding-top: 83px;
 	padding-bottom: 36px;
 	background: url("../img/main_bg_pc.png") calc(50vw) top/contain no-repeat;
+	background: url("../img/main_bg_pc.png") right top/contain no-repeat;
 	margin-bottom: 48px;
 }
 @media (max-width:1200px) {
@@ -623,7 +639,7 @@ h2{
 .main_wrap {
 }
 .main_title {
-	margin-bottom: 58px;
+	margin-bottom: 55px;
 	max-width: 480px;
 	width: 100%;
 	border-bottom: 4px solid $bl;
@@ -831,19 +847,14 @@ h2{
 }
 .usually_row {
 	overflow: hidden;
+	padding-top: 1px;
 	.swiper-wrapper{
-		// display: grid;
-		// grid-template-columns: repeat(4, 1fr);
-		// gap: 21px;
 	}
 }
 @media (max-width:991px){
 	.usually_row{
-		// overflow: hidden;
 		margin-right: -20px;
 		.swiper-wrapper{
-			// display: flex;
-			// gap: 0;
 		}
 	}
 }
@@ -851,7 +862,7 @@ h2{
 	box-shadow: 0px 22px 41px 0px #D7D7D757;
 	border: 1px solid rgba(0, 0, 0, 0.25);
 	border-radius: 4px;
-	padding: 63px 24px 40px;
+	padding: 63px 24px 35px;
 	position: relative;
 }
 @media (max-width:575px) {
@@ -871,12 +882,12 @@ h2{
 	top: 28px;
 	left: 24px;
 	box-shadow: 0px 5px 6px 0px #34C04B1C;
-
 	p{
 		font-size: 11px;
 		font-weight: 700;
 		line-height: 17px;
 		color:$w;
+		text-transform: uppercase;
 	}
 }
 @media (max-width:575px) {
@@ -896,6 +907,8 @@ h2{
 	height: 135px;
 	margin-bottom: 15px;
 	margin-left: auto;
+	box-shadow: 0px 9px 43px 0px #8D8D8D21;
+
 	img{
 		width: 100%;
 		height: 100%;
@@ -907,7 +920,7 @@ h2{
 	}
 }
 .usually_card_title {
-	margin-bottom: 40px;
+	margin-bottom: 45px;
 	p{
 		font-size: 16px;
 		font-weight: 700;
@@ -936,12 +949,12 @@ h2{
 	p{
 		font-size: 15px;
 		font-weight: 700;
-		line-height: 23px;
+		line-height: 1;
 	}
 	span{
 		font-size: 25px;
 		font-weight: 700;
-		line-height: 38px;
+		line-height: 1;
 	}
 }
 @media (max-width:1200px) {
@@ -1009,7 +1022,7 @@ h2{
 // ----end usually----
 // ----start service----
 .service {
-	margin-bottom: 79px;
+	margin-bottom: 50px;
 }
 .service_wrap {
 }
@@ -1035,7 +1048,8 @@ h2{
 	background: linear-gradient(180deg, #F1F0F0 0%, rgba(255, 255, 255, 0) 100%);
 	box-shadow: 0px 22px 41px 0px #D7D7D757;
 	display: grid;
-	grid-template-columns: repeat(2, 60% 40%);
+	// grid-template-columns: repeat(2, 60% 40%);
+	grid-template-columns: repeat(2, auto);
 }
 @media (max-width:991px){
 	.service_card{
@@ -1045,8 +1059,12 @@ h2{
 .service_card_info {
 	padding-top: 40px;
 	padding-left: 80px;
-	padding-bottom: 40px;
+	padding-bottom: 65px;
 	margin-right: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
 }
 @media (max-width:1200px) {
 	.service_card_info{
@@ -1065,6 +1083,7 @@ h2{
 }
 .service_card_info_text {
 	margin-bottom: 34px;
+	flex: 1;
 	p{
 		font-size: 16px;
 		font-weight: 400;
@@ -1079,6 +1098,9 @@ h2{
 			line-height: 1.2;
 		}
 	}
+}
+.service_card_info_text_order{
+	width: 237px;
 }
 .service_card_info_btns {
 }
@@ -1102,6 +1124,8 @@ h2{
 	align-items: center;
 	img{
 		width: 100%;
+		height: 100%;
+		object-fit: contain;
 	}
 }
 @media (max-width:575px) {
@@ -1122,7 +1146,7 @@ h2{
 .quality_content{
 	background-color: $bd;
 	border-radius: 10px;
-	padding: 64px 56px 113px;
+	padding: 60px 56px 113px;
 }
 @media (max-width:575px) {
 	.quality_content{
@@ -1132,7 +1156,7 @@ h2{
 	}
 }
 .quality_title {
-	margin-bottom: 57px;
+	margin-bottom: 54px;
 	h2{
 		color: $w;
 	}
@@ -1208,7 +1232,7 @@ h2{
 // ----end quality----
 // ----start learnMore----
 .learnMore {
-	margin-bottom: 115px;
+	margin-bottom: 105px;
 }
 .learnMore_wrap {
 	display: grid;
@@ -1275,6 +1299,13 @@ h2{
 	max-width: 277px;
 	width: 100%;
 	height: 65px;
+	span{
+		width: 19px;
+		height: 20px;
+		background: url("../img/goto.svg") center/contain no-repeat;
+		margin-right: 10px;
+		margin-top: -3px;
+	}
 }
 .learnMore_video {
 	a{
@@ -1373,6 +1404,9 @@ h2{
 		border-radius: 4px;
 		padding-left: 20px;
 		background-color: #F1F0F0;
+		font-size: 15px;
+		font-weight: 400;
+		line-height: 17px;
 	}
 }
 .detail_consul_form_tel {
@@ -1386,6 +1420,9 @@ h2{
 		border-radius: 4px;
 		padding-left: 20px;
 		background-color: #F1F0F0;
+		font-size: 15px;
+		font-weight: 400;
+		line-height: 17px;
 	}
 }
 .detail_consul_form_btns {
@@ -1428,7 +1465,7 @@ h2{
 	max-width: 595px;
 	width: 100%;
 	height: 200px;
-	margin-bottom: 46px;
+	margin-bottom: 33px;
 	border-radius: 10px;
 	overflow: hidden;
 }
@@ -1446,7 +1483,7 @@ h2{
 	width: 100%;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	gap: 25px;
+	gap: 10px;
 }
 @media (max-width:991px) {
 	.detail_geo_contacts{
@@ -2970,6 +3007,9 @@ h2{
 		}
 	}
 }
+.delivery_info_list_item_text_one{
+	transform: translateY(5px);
+}
 .min_delivery {
 	font-size: 18px;
 	font-weight: 700;
@@ -3123,6 +3163,9 @@ h2{
 	max-width: 270px;
 	width: 100%;
 	height: 65px;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 21px;
 }
 // ----end delivery---- 
 // ----start about----
@@ -3285,28 +3328,25 @@ h2{
 .aboutTrust_row {
 	max-width: 830px;
 	margin: 0 auto;
-	display: grid;
-	grid-template-columns: repeat(3 ,1fr);
-	gap: 100px;
+	display: flex;
+	justify-content: space-between;
+	img{
+		height: 100%;
+	}
 }
 @media (max-width:991px) {
 	.aboutTrust_row{
-		gap: 50px;
+		height: 150px;
+	}
+}
+@media (max-width:767px) {
+	.aboutTrust_row{
+		height: 100px;
 	}
 }
 @media (max-width:575px) {
 	.aboutTrust_row{
-		gap: 40px;
-	}
-}
-.aboutTrust_card {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	max-width: 200px;
-	width: 100%;
-	img{
-		width: 100%;
+		height: 75px;
 	}
 }
 
@@ -3538,6 +3578,7 @@ h2{
 	margin-right: 35px;
 }
 .payment_info_list_item_content {
+	margin-top: -5px;
 }
 .payment_info_list_item_title {
 	margin-bottom: 10px;
@@ -3576,6 +3617,12 @@ h2{
 	max-width: 292px;
 	width: 100%;
 	height: 65px;
+	span{
+		width: 17px;
+		height: 15px;
+		margin-right: 16px;
+		background: url("../img/cart_white.svg") center/contain no-repeat;
+	}
 }
 @media (max-width:767px) {
 .payment_info_btn{
