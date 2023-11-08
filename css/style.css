@@ -5763,7 +5763,6 @@ h2 {
 }
 
 .lk {
-  margin-top: 111px;
   margin-bottom: 177px;
 }
 
@@ -6095,10 +6094,6 @@ h2 {
     margin-bottom: 5px;
   }
 }
-.cartMain {
-  margin-top: 100px;
-}
-
 @media (max-width: 575px) {
   .cartMain {
     margin-top: 40px;
@@ -6659,10 +6654,6 @@ h2 {
 .cart_recomend_slider_button_prev {
   left: 0;
   background: url("../img/chevron_left_blue.svg") center/contain no-repeat;
-}
-
-.ordering {
-  margin-top: 100px;
 }
 
 @media (max-width: 575px) {
@@ -7752,7 +7743,6 @@ h2 {
 
 .pre_catalog {
   padding: 0 20px;
-  margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
