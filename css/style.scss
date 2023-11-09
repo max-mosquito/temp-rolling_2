@@ -2985,11 +2985,13 @@ h2{
 }
 .delivery_info_list_item_marker {
 	margin-right: 28px;
+	flex: 0 0 20px;
 	p{
 		font-size: 32px;
 		font-weight: 700;
 		line-height: 1.2;
 		color: $bl;
+		text-align: center;
 	}
 }
 .delivery_info_list_item_text {

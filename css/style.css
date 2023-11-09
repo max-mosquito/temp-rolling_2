@@ -3360,12 +3360,16 @@ h2 {
 }
 .delivery_info_list_item_marker {
   margin-right: 28px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 20px;
+          flex: 0 0 20px;
 }
 .delivery_info_list_item_marker p {
   font-size: 32px;
   font-weight: 700;
   line-height: 1.2;
   color: #2E5AF0;
+  text-align: center;
 }
 
 .delivery_info_list_item_text p {
