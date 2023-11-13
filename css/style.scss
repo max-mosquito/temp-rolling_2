@@ -2325,18 +2325,16 @@ h2{
 	span{
 		font-size: 25px;
 		font-weight: 700;
-		line-height: 38px;
+		line-height: 1;
 	}
 }
 @media (max-width:1200px) {
 	.catalog_main_showcase_content_card_bottom_price_pc{
 		p{
 			font-size: 12px;
-			line-height: 1.2;
 		}
 		span{
 			font-size: 20px;
-			line-height: 1.2;
 		}
 	}
 }
