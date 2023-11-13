@@ -979,6 +979,7 @@ h2 {
   line-height: 17px;
   color: #ffffff;
   text-transform: uppercase;
+  margin-bottom: -2px;
 }
 
 @media (max-width: 575px) {
@@ -1198,6 +1199,7 @@ h2 {
 }
 .service_card_info_title {
   margin-bottom: 7px;
+  margin-left: -2px;
 }
 
 .service_card_info_text {
@@ -2533,6 +2535,7 @@ h2 {
   line-height: 17px;
   color: #ffffff;
   text-transform: uppercase;
+  margin-bottom: -2px;
 }
 
 @media (max-width: 575px) {
