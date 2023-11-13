@@ -2604,7 +2604,7 @@ h2 {
 .catalog_main_showcase_content_card_bottom_price_pc p {
   font-size: 15px;
   font-weight: 700;
-  line-height: 23px;
+  line-height: 1;
 }
 .catalog_main_showcase_content_card_bottom_price_pc span {
   font-size: 25px;
