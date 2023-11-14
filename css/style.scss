@@ -574,7 +574,7 @@ h2{
 	font-weight: 700;
 	line-height: 24px;
 	text-align: left;
-	margin-bottom: 14px;
+	margin-bottom: 25px;
 	position: relative;
 	padding-left: 25px;
 	text-transform: uppercase;
@@ -593,12 +593,20 @@ h2{
 	}
 	&:hover{
 		.catalog_hover_list_inner{
-			display: block;
+			position: relative;
+			opacity: 1;
+			visibility: visible;
+			height: 48px;
 		}
 	}
 }
 .catalog_hover_list_inner {
-	display: none;
+	top: 100%;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.3s;
+	height: 0;
 }
 .catalog_hover_list_item_inner {
 	padding-left: 20px;
@@ -883,7 +891,7 @@ h2{
 	left: 24px;
 	box-shadow: 0px 5px 6px 0px #34C04B1C;
 	p{
-		font-size: 11px;
+		font-size: 9px;
 		font-weight: 700;
 		line-height: 17px;
 		color:$w;
@@ -2252,7 +2260,7 @@ h2{
 	box-shadow: 0px 5px 6px 0px #34C04B1C;
 
 	p{
-		font-size: 11px;
+		font-size: 9px;
 		font-weight: 700;
 		line-height: 17px;
 		color:$w;
@@ -2633,6 +2641,8 @@ h2{
 		margin-right: 30px;
 		img{
 			width: 100%;
+			height: 100%;
+			object-fit: cover;
 		}
 	}
 	.leaders_slide_content {
@@ -2718,6 +2728,36 @@ h2{
 .calc_title {
 	margin-bottom: 27px;
 	position: relative;
+}
+@media (max-width:575px) {
+	.calc_title{
+		h2{
+			line-height: 33px;
+		}
+	}
+}
+.calc_title_line{
+	position: relative;
+	&:after{
+		position: absolute;
+		content: "";
+		width: 100%;
+		height: 3px;
+		left: 0;
+		bottom: 5px;
+		background-color: $bl;
+	}
+	&:first-child:after{
+		content: none;
+	}
+}
+@media (max-width:767px) {
+	.calc_title_line:first-child:after{
+		content: "";
+	}
+	.calc_title_line:last-child:after{
+		content: none;
+	}
 }
 .calc_block {
 	display: grid;
@@ -2906,6 +2946,7 @@ h2{
 .breadcrumbs_wrap {
 }
 .breadcrumbs_content {
+	margin-bottom: 30px;
 	ul{
 		display: flex;
 		flex-wrap: wrap;
@@ -3860,7 +3901,9 @@ h2{
 	}
 }
 .contacts_content__detail_content_subtitle {
-	margin-bottom: 27px;
+	max-width: 272px;
+	width: 100%;
+	margin: 0 auto 27px;
 	P{
 		font-size: 15px;
 		font-weight: 400;
@@ -3946,9 +3989,9 @@ h2{
 // ----end contacts----
 // ----start support---- 
 .support {
-	background: url("../img/bg_support.png")right center no-repeat;
+	background: url("../img/bg_support.png")right center/contain no-repeat;
 	margin-bottom: 70px;
-	padding-top: 100px;
+	padding-top: 50px;
 	padding-bottom: 120px;
 }
 @media (max-width:767px) {
@@ -4154,7 +4197,9 @@ h2{
 	}
 }
 .faq_detail_content_subtitle {
-	margin-bottom: 27px;
+	max-width: 272px;
+	width: 100%;
+	margin: 0 auto 27px;
 	p{
 		font-size: 15px;
 		font-weight: 400;
@@ -4302,7 +4347,9 @@ h2{
 	}
 }
 .garantees_detail_content_subtitle {
-	margin-bottom: 27px;
+	max-width: 272px;
+	width: 100%;
+	margin: 0 auto 27px;
 	p{
 		font-size: 15px;
 		font-weight: 400;
@@ -5783,7 +5830,7 @@ h2{
 	column-gap: 30px;
 	padding: 26px 20px 23px;
 	margin-bottom: 10px;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 	&:last-child{
 		margin-bottom: 0;
 	}
@@ -6483,6 +6530,9 @@ h2{
 		padding-left: 20px;
 		border: 1px solid rgba(0, 0, 0, 0.25);
 		border-radius: 3px;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 24px;
 	}
 }
 .ordering_stage_geo_inputs_title {

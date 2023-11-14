@@ -647,7 +647,7 @@ h2 {
   font-weight: 700;
   line-height: 24px;
   text-align: left;
-  margin-bottom: 14px;
+  margin-bottom: 25px;
   position: relative;
   padding-left: 25px;
   text-transform: uppercase;
@@ -666,11 +666,20 @@ h2 {
   background: url("../img/chevron_right_blue.svg") center/contain no-repeat;
 }
 .catalog_hover_list_item:hover .catalog_hover_list_inner {
-  display: block;
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+  height: 48px;
 }
 
 .catalog_hover_list_inner {
-  display: none;
+  top: 100%;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  height: 0;
 }
 
 .catalog_hover_list_item_inner {
@@ -974,7 +983,7 @@ h2 {
           box-shadow: 0px 5px 6px 0px rgba(52, 192, 75, 0.1098039216);
 }
 .usually_isHave p {
-  font-size: 11px;
+  font-size: 9px;
   font-weight: 700;
   line-height: 17px;
   color: #ffffff;
@@ -2530,7 +2539,7 @@ h2 {
           box-shadow: 0px 5px 6px 0px rgba(52, 192, 75, 0.1098039216);
 }
 .catalog_main_showcase_content_isHave p {
-  font-size: 11px;
+  font-size: 9px;
   font-weight: 700;
   line-height: 17px;
   color: #ffffff;
@@ -2945,6 +2954,9 @@ h2 {
 }
 .leaders_slider .leaders_slide_pic img {
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .leaders_slider .leaders_slide_content {
   display: -webkit-box;
@@ -3047,6 +3059,35 @@ h2 {
   position: relative;
 }
 
+@media (max-width: 575px) {
+  .calc_title h2 {
+    line-height: 33px;
+  }
+}
+.calc_title_line {
+  position: relative;
+}
+.calc_title_line:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 3px;
+  left: 0;
+  bottom: 5px;
+  background-color: #2E5AF0;
+}
+.calc_title_line:first-child:after {
+  content: none;
+}
+
+@media (max-width: 767px) {
+  .calc_title_line:first-child:after {
+    content: "";
+  }
+  .calc_title_line:last-child:after {
+    content: none;
+  }
+}
 .calc_block {
   display: -ms-grid;
   display: grid;
@@ -3274,6 +3315,9 @@ h2 {
   .breadcrumbs {
     margin-bottom: 25px;
   }
+}
+.breadcrumbs_content {
+  margin-bottom: 30px;
 }
 .breadcrumbs_content ul {
   display: -webkit-box;
@@ -4248,7 +4292,9 @@ h2 {
   }
 }
 .contacts_content__detail_content_subtitle {
-  margin-bottom: 27px;
+  max-width: 272px;
+  width: 100%;
+  margin: 0 auto 27px;
 }
 .contacts_content__detail_content_subtitle P {
   font-size: 15px;
@@ -4328,9 +4374,9 @@ h2 {
 }
 
 .support {
-  background: url("../img/bg_support.png") right center no-repeat;
+  background: url("../img/bg_support.png") right center/contain no-repeat;
   margin-bottom: 70px;
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 120px;
 }
 
@@ -4549,7 +4595,9 @@ h2 {
 }
 
 .faq_detail_content_subtitle {
-  margin-bottom: 27px;
+  max-width: 272px;
+  width: 100%;
+  margin: 0 auto 27px;
 }
 .faq_detail_content_subtitle p {
   font-size: 15px;
@@ -4689,7 +4737,9 @@ h2 {
 }
 
 .garantees_detail_content_subtitle {
-  margin-bottom: 27px;
+  max-width: 272px;
+  width: 100%;
+  margin: 0 auto 27px;
 }
 .garantees_detail_content_subtitle p {
   font-size: 15px;
@@ -6383,7 +6433,7 @@ h2 {
           column-gap: 30px;
   padding: 26px 20px 23px;
   margin-bottom: 10px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
 .cartMain_foods_item > *:nth-child(1) {
   -ms-grid-row: 1;
@@ -7211,6 +7261,9 @@ h2 {
   padding-left: 20px;
   border: 1px solid rgba(0, 0, 0, 0.25);
   border-radius: 3px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .ordering_stage_geo_inputs_title {
