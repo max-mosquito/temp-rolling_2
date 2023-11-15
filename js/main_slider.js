@@ -2,13 +2,13 @@
 const usually = new Swiper('.usually_row', {
    spaceBetween: 10,
    loop: true,
-   autoplay: true,
+  //  autoplay: true,
    breakpoints: {
      300: {
-       slidesPerView: 1.2,
+       slidesPerView: 1.8,
      },
      440: {
-       slidesPerView: 1.75,
+       slidesPerView: 2,
      },
      575: {
        slidesPerView: 2.5,
