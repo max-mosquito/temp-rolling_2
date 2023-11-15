@@ -2098,7 +2098,7 @@ h2 {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  left: 0;
+  left: 2px;
   width: 10px;
   height: 15px;
   background: url("../img/geo_blue.svg") center/contain no-repeat;
