@@ -5039,7 +5039,7 @@ h2{
 // end garantees----
 // ----start category----
 .category {
-	margin-bottom: 130px; 
+	margin-bottom: 121px; 
 }
 .category_wrap {
 }
@@ -5060,7 +5060,7 @@ h2{
 	border-radius: 4px;
 	display: flex;
 	flex-direction: column;
-	padding-bottom: 33px;
+	padding-bottom: 29px;
 }
 @media (max-width:767px) {
 	.category_content_item{
@@ -5110,12 +5110,17 @@ h2{
 	display: flex;
 	flex-direction: column;
 	flex: 1;
-	margin-top: -20px;
+	margin-top: -17px;
 	position: relative;
 	z-index: 1;
 }
+@media (max-width:575px) {
+	.category_content_item_text{
+		margin: 0;
+	}
+}
 .category_content_item_title {
-	margin-bottom: 5px;
+	margin-bottom: 13px;
 	padding: 0 40px;
 	flex: 1;
 	h2{
