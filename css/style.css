@@ -5122,7 +5122,6 @@ h2 {
 
 .faq {
   background: url("../img/bg_faq.png") right center no-repeat;
-  padding-top: 50px;
   padding-bottom: 62px;
   margin-bottom: 70px;
 }
@@ -5132,6 +5131,7 @@ h2 {
     background: none;
     padding-top: 0;
     padding-bottom: 0;
+    margin-bottom: 88px;
   }
 }
 .faq_wrap {
@@ -5151,12 +5151,25 @@ h2 {
   padding-right: 10px;
 }
 
+@media (max-width: 575px) {
+  .faq_content {
+    padding: 0;
+  }
+}
 .faq_title {
   margin-bottom: 30px;
 }
+.faq_title h2 {
+  text-transform: none;
+}
 
+@media (max-width: 575px) {
+  .faq_title {
+    margin-bottom: 21px;
+  }
+}
 .faq_item {
-  padding: 13px 30px;
+  padding: 12px 30px;
   background-color: #F1F0F0;
   border-radius: 4px;
   margin-bottom: 5px;
@@ -5165,6 +5178,13 @@ h2 {
   margin: 0;
 }
 
+@media (max-width: 575px) {
+  .faq_item {
+    padding-top: 20px;
+    padding-bottom: 14px;
+    margin-bottom: 7px;
+  }
+}
 .faq_item_title {
   cursor: pointer;
   position: relative;
@@ -5177,8 +5197,8 @@ h2 {
   -webkit-transform: translateY(-50%) rotate(0deg);
           transform: translateY(-50%) rotate(0deg);
   right: 0;
-  width: 16px;
-  height: 7px;
+  width: 20px;
+  height: 12px;
   background: url("../img/chevron_down_blue.svg") center/contain no-repeat;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -5197,6 +5217,8 @@ h2 {
   margin-top: 20px;
   margin-bottom: 7px;
   display: none;
+  max-width: 453px;
+  width: 100%;
 }
 .faq_item_content p {
   font-size: 16px;
@@ -5207,6 +5229,19 @@ h2 {
   display: block;
 }
 
+@media (max-width: 575px) {
+  .faq_item_content {
+    margin-top: 12px;
+  }
+  .faq_item_content p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+.faq_detail {
+  padding-left: 53px;
+}
+
 @media (max-width: 767px) {
   .faq_detail {
     display: none;
@@ -5215,7 +5250,7 @@ h2 {
 .faq_detail_content {
   max-width: 370px;
   width: 100%;
-  padding: 31px 24px 36px;
+  padding: 39px 24px 36px;
   background-color: #fff;
   border-radius: 4px;
   margin: 0 auto;
@@ -5232,7 +5267,7 @@ h2 {
 .faq_detail_content_subtitle {
   max-width: 272px;
   width: 100%;
-  margin: 0 auto 27px;
+  margin: 0 auto 30px;
 }
 .faq_detail_content_subtitle p {
   font-size: 15px;
