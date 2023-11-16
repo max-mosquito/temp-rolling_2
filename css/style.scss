@@ -3620,11 +3620,11 @@ h2{
 .aboutPoints_row {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	gap: 40px;
-	max-width: 815px;
+	gap: 39px;
+	max-width: 870px;
 	width: 100%;
 	margin: 0 auto;
-	padding-bottom: 30px;
+	padding-bottom: 20px;
 	position: relative;
 	margin-bottom: 60px;
 	&:after{
@@ -3645,6 +3645,11 @@ h2{
 		&:after{
 			width: 75%;
 		}
+	}
+}
+@media (max-width:575px) {
+	.aboutPoints_row{
+		padding-bottom: 43px;
 	}
 }
 .aboutPoints_card {
@@ -3734,9 +3739,11 @@ h2{
 }
 @media (max-width:575px){
 	.aboutFeatures_card_text{
+		max-width: 250px;
+		width: 100%;
 		p{
 			font-size: 14px;
-			line-height: 1.2;
+			line-height: 1.5;
 		}
 	}
 }
@@ -3745,7 +3752,7 @@ h2{
 }
 @media (max-width:575px) {
 	.aboutTrust{
-		margin-bottom: 100px;
+		margin-bottom: 76px;
 	}
 }
 .aboutTrust_wrap {
@@ -3792,7 +3799,7 @@ h2{
 }
 @media (max-width:767px){
 	.aboutDetail{
-		margin-bottom: 60px;
+		margin-bottom: 68px;
 	}
 }
 .aboutDetail_wrap{
@@ -3804,10 +3811,10 @@ h2{
 }
 .aboutDetail_wrapper {
 	background: url("../img/bg_aboutDetail.png") left center/contain no-repeat;
-	padding-top: 50px;
+	padding-top: 54px;
 	padding-bottom: 50px;
 	display: grid;
-	grid-template-columns: repeat(1, 50%);
+	grid-template-columns: 50%;
 	justify-content: end;
 	box-shadow: 0px 22px 65px 0px #75757536;
 }
@@ -3825,9 +3832,14 @@ h2{
 		padding-right: 20px;
 	}
 }
+@media (max-width:575px) {
+	.aboutDetail_wrapper{
+		padding: 0 37px;
+	}
+}
 .aboutDetail_content {
-	max-width: 455px;
-	padding-left: 20px;
+	max-width: 426px;
+	padding-left: 9px;
 	padding-right: 20px;
 	width: 100%;
 }
@@ -3844,6 +3856,12 @@ h2{
 		margin: 0 auto;
 	}
 }
+@media (max-width:575px) {
+	.aboutDetail_content{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
 .aboutDetail_content_title {
 }
 @media (max-width:767px){
@@ -3854,7 +3872,7 @@ h2{
 	}
 }
 .aboutDetail_content_subtitle {
-	margin-bottom: 26px;
+	margin-bottom: 31px;
 	p{
 		font-size: 15px;
 		font-weight: 400;
@@ -3870,6 +3888,8 @@ h2{
 }
 @media (max-width:575px){
 	.aboutDetail_content_subtitle{
+		padding: 0 20px;
+		margin-bottom: 16px;
 		p{
 			font-size: 12px;
 			line-height: 1.2;
@@ -3881,7 +3901,7 @@ h2{
 .aboutDetail_form_name {
 	width: 100%;
 	height: 51px;
-	margin-bottom: 13px;
+	margin-bottom: 16px;
 	input {
 		width: 100%;
 		height: 100%;
@@ -3895,6 +3915,8 @@ h2{
 }
 @media (max-width:575px){
 	.aboutDetail_form_name{
+		height: 37px;
+		margin-bottom: 9px;
 		input{
 			font-size: 12px;
 			line-height: 1.2;
@@ -3904,7 +3926,7 @@ h2{
 .aboutDetail_form_tel {
 	width: 100%;
 	height: 51px;
-	margin-bottom: 25px;
+	margin-bottom: 27px;
 	input {
 		width: 100%;
 		height: 100%;
@@ -3918,6 +3940,8 @@ h2{
 }
 @media (max-width:575px){
 	.aboutDetail_form_tel{
+		height: 37px;
+		margin-bottom: 15px;
 		input{
 			font-size: 12px;
 			line-height: 1.2;
@@ -3926,6 +3950,11 @@ h2{
 }
 .aboutDetail_form_btns {
 	margin-bottom: 20px;
+}
+@media (max-width:575px){
+	.aboutDetail_form_btns{
+		margin-bottom: 9px;
+	}
 }
 .aboutDetail_form_btn {
 	width: 100%;
@@ -3940,7 +3969,7 @@ h2{
 }
 .aboutDetail_pd {
 	p, a{
-		font-size: 13px;
+		font-size: 12px;
 		font-weight: 400;
 		line-height: 15px;
 		text-align: center;
