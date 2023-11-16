@@ -5353,6 +5353,11 @@ h2 {
   text-transform: none;
 }
 
+@media (max-width: 575px) {
+  .garantees_title {
+    margin-bottom: 20px;
+  }
+}
 .garantees_content {
   display: -ms-grid;
   display: grid;
@@ -5380,7 +5385,7 @@ h2 {
 @media (max-width: 575px) {
   .garantees_text p {
     font-size: 14px;
-    line-height: 1.2;
+    line-height: 18px;
     margin-bottom: 25px;
   }
 }
