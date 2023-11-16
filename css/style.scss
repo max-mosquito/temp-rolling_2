@@ -3302,7 +3302,7 @@ h2{
 }
 @media (max-width:575px) {
 	.breadcrumbs{
-		margin-bottom: 25px;
+		margin: 25px 0;
 	}
 }
 .breadcrumbs_wrap {
@@ -3357,11 +3357,11 @@ h2{
 // ----end breadcrumbs----
 // ----start delivery---- 
 .delivery_info {
-	margin-bottom: 96px;
+	margin-bottom: 91px;
 }
 @media (max-width:575px) {
 	.delivery_info{
-		margin-bottom: 25px;
+		margin-bottom: 30px;
 	}
 }
 .delivery_info_wrap {
@@ -3369,10 +3369,20 @@ h2{
 .delivery_info_title {
 	margin-bottom: 11px;
 }
+@media (max-width:575px) {
+	.delivery_info_title{
+		margin-bottom: 31px;
+	}
+}
 .delivery_info_list {
 	max-width: 617px;
 	width: 100%;
 	margin-bottom: 30px;
+}
+@media (max-width:575px) {
+	.delivery_info_list{
+		margin-bottom: 13px;
+	}
 }
 .delivery_info_list_item {
 	margin-bottom: 27px;
@@ -3384,7 +3394,7 @@ h2{
 }
 @media (max-width:575px) {
 	.delivery_info_list_item{
-		margin-bottom: 20px;
+		margin-bottom: 24px;
 	}
 }
 .delivery_info_list_item_marker {
@@ -3409,7 +3419,7 @@ h2{
 	.delivery_info_list_item_text{
 		p{
 			font-size: 12px;
-			line-height: 1.2;
+			line-height: 1.5;
 		}
 	}
 }
@@ -3432,6 +3442,11 @@ h2{
 .delivery_order {
 	margin-bottom: 93px;
 }
+@media (max-width:575px) {
+	.delivery_order{
+		margin-bottom: 60px;
+	}
+}
 .delivery_order_wrap {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -3450,8 +3465,13 @@ h2{
 		margin: 0;
 	}
 }
+@media (max-width:575px) {
+	.delivery_order_adr_item{
+		margin-bottom: 30px;
+	}
+}
 .delivery_order_adr_item_title {
-	margin-bottom: 15px;
+	margin-bottom: 12px;
 	position: relative;
 	padding-left: 33px;
 	&:before{
@@ -3473,6 +3493,8 @@ h2{
 }
 @media (max-width:575px) {
 	.delivery_order_adr_item_title{
+		padding-left: 45px;
+		margin-bottom: 20px;
 		p{
 			font-size: 16px;
 			line-height: 1.2;
@@ -3492,7 +3514,7 @@ h2{
 }
 @media (max-width:575px){
 	.delivery_order_adr_item_text{
-		padding-left: 33px;
+		padding-left: 45px;
 		p{
 			font-size: 14px;
 			line-height: 1.2;
@@ -3524,6 +3546,8 @@ h2{
 }
 @media (max-width:575px) {
 	.delivery_order_contacts_item_title{
+		padding-left: 45px;
+		margin-bottom: 22px;
 		p{
 			font-size: 16px;
 			line-height: 1.2;
@@ -3539,7 +3563,8 @@ h2{
 }
 @media (max-width:575px){
 	.delivery_order_contacts_tel{
-		padding-left: 33px;
+		padding-left: 45px;
+		margin-bottom: 3px;
 		a{
 			font-size: 14px;
 			line-height: 1.2;
@@ -3556,7 +3581,8 @@ h2{
 }
 @media (max-width:575px){
 	.delivery_order_contacts_name{
-		padding-left: 33px;
+		padding-left: 45px;
+		margin-bottom: 47px;
 		p{
 			font-size: 14px;
 			line-height: 1.2;
@@ -3572,6 +3598,11 @@ h2{
 	font-size: 14px;
 	font-weight: 700;
 	line-height: 21px;
+}
+@media (max-width:575px) {
+	.delivery_order_contacts_btn{
+		max-width: 300px;
+	}
 }
 // ----end delivery---- 
 // ----start about----
