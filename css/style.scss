@@ -4281,18 +4281,38 @@ h2{
 // ----end payment----
 // ----enstartd contacts----
 .contacts {
-	background: url("../img/bg_contacts.png") calc(50vw) top/contain no-repeat;
-	margin-bottom: 70px;
+	background: url("../img/bg_contacts.png") right top/contain no-repeat;
+	margin-bottom: 67px;
+}
+@media (max-width:1400px){
+	.contacts{
+		background-position: 50vw top;
+	}
 }
 @media (max-width:767px){
 	.contacts{
 		background: none;
 	}
 }
+@media (max-width:575px){
+	.contacts{
+		margin-bottom: 81px;
+	}
+}
 .contacts_wrap {
 }
 .contacts_title {
 	margin-bottom: 50px;
+}
+@media (max-width:575px) {
+	.contacts_title{
+		margin-bottom: 30px;
+		h2{
+			text-transform: none;
+			font-size: 20px;
+			line-height: 26px;
+		}
+	}
 }
 .contacts_content {
 	display: grid;
@@ -4302,6 +4322,7 @@ h2{
 @media (max-width:767px) {
 	.contacts_content{
 		grid-template-columns: repeat(1, 1fr);
+		gap: 3px;
 	}
 }
 .contacts_content_descr {
@@ -4310,31 +4331,48 @@ h2{
 .contacts_content_descr_item {
 	display: flex;
 	align-items: flex-start;
-	margin-bottom: 33px;
+	margin-bottom: 23px;
+	padding-left: 60px;
 	&:last-child{
 		margin: 0;
 	}
 }
+@media (max-width:767px) {
+	.contacts_content_descr_item{
+		padding: 0;
+	}
+}
+@media (max-width:575px) {
+	.contacts_content_descr_item{
+		margin-bottom: 25px;
+	}
+	
+}
 .contacts_content_descr_item_pic {
 	margin-right: 20px;
-	width: 15px;
+	width: 17px;
 	img{
 		width: 100%;
+	}
+}
+@media (max-width:575px) {
+	.contacts_content_descr_item_pic{
+		margin-right: 29px;
 	}
 }
 .contacts_content_descr_item_content {
 }
 .contacts_content_descr_item_header {
 	margin-bottom: 10px;
-	.p{
+	p{
 		font-size: 16px;
 		font-weight: 400;
 		line-height: 24px;
 	}
 }
 @media (max-width:575px) {
-	.contacts{
-		margin-bottom: 0;
+	.contacts_content_descr_item_header{
+		margin-bottom: 4px;
 		p{
 			font-size: 12px;
 			line-height: 1.2;
@@ -4348,10 +4386,22 @@ h2{
 		line-height: 30px;
 	}
 }
+@media (max-width:575px) {
+	.contacts_content_descr_item_data{
+		p, a {
+			font-size: 16px;
+			line-height: 24px;
+		}
+	}
+}
 .contacts_content_map {
 	max-width: 500px;
 	width: 100%;
-	height: 200px;
+	height: 216px;
+	padding-top: 16px;
+	> div{
+		height: 100%;
+	}
 }
 @media (max-width:575px) {
 	.contacts_content_map{
@@ -4359,6 +4409,13 @@ h2{
 	}
 }
 .contacts_content_detail {
+	margin-left: 60px;
+}
+@media (max-width:767px) {
+	.contacts_content_detail{
+		margin: 0;
+		background: url("../img/bg_detail.png") top right/cover no-repeat;
+	}
 }
 .contacts_content__detail_content {
 	max-width: 368px;
@@ -4369,7 +4426,13 @@ h2{
 	padding: 31px 24px 36px;
 	box-shadow: 0px 22px 65px 0px #75757536;
 }
+@media (max-width:575px) {
+	.contacts_content__detail_content{
+		padding-bottom: 21px;
+	}
+}
 .contacts_content_detaill_content_title {
+	margin-bottom: 2px;
 	p{
 		font-size: 23px;
 		font-weight: 700;
@@ -4380,6 +4443,7 @@ h2{
 }
 @media (max-width:575px) {
 	.contacts_content_detaill_content_title{
+		margin-bottom: 6px;
 		p{
 			font-size: 20px;
 			line-height: 1.2;
@@ -4389,7 +4453,7 @@ h2{
 .contacts_content__detail_content_subtitle {
 	max-width: 272px;
 	width: 100%;
-	margin: 0 auto 27px;
+	margin: 0 auto 30px;
 	P{
 		font-size: 15px;
 		font-weight: 400;
@@ -4399,6 +4463,7 @@ h2{
 }
 @media (max-width:575px) {
 	.contacts_content__detail_content_subtitle{
+		margin-bottom: 18px;
 		p{
 			font-size: 12px;
 			line-height: 1.2;
@@ -4424,6 +4489,8 @@ h2{
 }
 @media (max-width:575px){
 	.contacts_content__detail_form_name{
+		height: 37px;
+		margin-bottom: 8px;
 		input{
 			font-size: 12px;
 			line-height: 1.2;
@@ -4447,6 +4514,8 @@ h2{
 }
 @media (max-width:575px){
 	.contacts_content__detail_form_tel{
+		height: 37px;
+		margin-bottom: 14px;
 		input{
 			font-size: 12px;
 			line-height: 1.2;
@@ -4456,9 +4525,21 @@ h2{
 .contacts_content__detail_form_btns {
 	margin-bottom: 27px;
 }
+@media (max-width:575px) {
+	.contacts_content__detail_form_btns{
+		margin-bottom: 9px;
+	}
+}
 .contacts_content__detail_form_btn {
 	width: 100%;
 	height: 61px;
+}
+@media (max-width:575px) {
+	.contacts_content__detail_form_btn{
+		height: 44px;
+		font-size: 12px;
+		line-height: 18px;
+	}
 }
 .contacts_content__detail_pd {
 	p, a {
@@ -4470,6 +4551,14 @@ h2{
 	a {
 		display: inline-block;
 		text-decoration: underline;
+	}
+}
+@media (max-width:575px) {
+	.contacts_content__detail_pd{
+		p, a {
+			font-size: 10px;
+			line-height: 12px;
+		}
 	}
 }
 // ----end contacts----
