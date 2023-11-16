@@ -4421,20 +4421,37 @@ h2 {
 .payment {
   background: url("../img/bg_payment.png") right bottom no-repeat;
   padding-bottom: 100px;
+  margin-bottom: 67px;
 }
 
+@media (max-width: 1200px) {
+  .payment {
+    background-position: 50vw bottom;
+  }
+}
 @media (max-width: 767px) {
   .payment {
     background: none;
   }
 }
+@media (max-width: 575px) {
+  .payment {
+    padding: 0;
+    margin-bottom: 73px;
+  }
+}
 .payment_title {
-  margin-bottom: 30px;
+  margin-bottom: 34px;
 }
 .payment_title h2 {
   text-transform: none;
 }
 
+@media (max-width: 575px) {
+  .payment_title {
+    margin-bottom: 27px;
+  }
+}
 .payment_content {
   display: -ms-grid;
   display: grid;
@@ -4447,6 +4464,11 @@ h2 {
   .payment_content {
     -ms-grid-columns: (1fr)[1];
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 575px) {
+  .payment_content {
+    gap: 61px;
   }
 }
 .payment_info_list {
@@ -4465,22 +4487,28 @@ h2 {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin-bottom: 45px;
-  background-color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 51px;
   border-radius: 4px;
-  padding: 5px;
+}
+.payment_info_list_item:last-child {
+  margin: 0;
 }
 
 @media (max-width: 575px) {
   .payment_info_list_item {
-    margin-bottom: 30px;
+    margin-bottom: 34px;
   }
 }
 .payment_info_list_item_pic {
   width: 45px;
-  margin-right: 35px;
+  margin-right: 34px;
 }
 
+@media (max-width: 575px) {
+  .payment_info_list_item_pic {
+    margin-right: 40px;
+  }
+}
 .payment_info_list_item_content {
   margin-top: -5px;
 }
@@ -4495,6 +4523,10 @@ h2 {
 }
 
 @media (max-width: 575px) {
+  .payment_info_list_item_title {
+    padding-top: 3px;
+    margin-bottom: 14px;
+  }
   .payment_info_list_item_title p {
     font-size: 18px;
     line-height: 1.2;
@@ -4509,7 +4541,7 @@ h2 {
 @media (max-width: 575px) {
   .payment_info_list_item_text p {
     font-size: 14px;
-    line-height: 1.2;
+    line-height: 1.5;
   }
 }
 .payment_info_btn {
@@ -4533,17 +4565,26 @@ h2 {
   max-width: 370px;
   width: 100%;
   margin: 0 auto;
-  padding: 31px 24px 36px;
+  padding: 45px 24px 36px;
   background-color: #fff;
   -webkit-box-shadow: 0px 106px 65px 0px rgba(74, 74, 74, 0.1803921569);
           box-shadow: 0px 106px 65px 0px rgba(74, 74, 74, 0.1803921569);
   border-radius: 4px;
+  -webkit-transform: translateX(37px);
+          transform: translateX(37px);
 }
 
 @media (max-width: 767px) {
   .payment_detail_content {
     -webkit-box-shadow: 0px 15.806306839px 46.7004508972px 0px rgba(117, 117, 117, 0.2117647059);
             box-shadow: 0px 15.806306839px 46.7004508972px 0px rgba(117, 117, 117, 0.2117647059);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@media (max-width: 575px) {
+  .payment_detail_content {
+    padding-bottom: 24px;
   }
 }
 .payment_detaill_content_title p {
@@ -4555,6 +4596,9 @@ h2 {
 }
 
 @media (max-width: 575px) {
+  .payment_detaill_content_title {
+    margin-bottom: 5px;
+  }
   .payment_detaill_content_title p {
     font-size: 20px;
     line-height: 1.2;
@@ -4573,6 +4617,10 @@ h2 {
 }
 
 @media (max-width: 575px) {
+  .payment_detail_content_subtitle {
+    padding: 0 10px;
+    margin: 0 auto 18px;
+  }
   .payment_detail_content_subtitle p {
     font-size: 12px;
     line-height: 1.2;
@@ -4595,15 +4643,19 @@ h2 {
 }
 
 @media (max-width: 575px) {
+  .payment_detail_form_name {
+    height: 37px;
+    margin-bottom: 8px;
+  }
   .payment_detail_form_name input {
-    font-size: 12px;
+    font-size: 10px;
     line-height: 1.2;
   }
 }
 .payment_detail_form_tel {
   width: 100%;
   height: 51px;
-  margin-bottom: 25px;
+  margin-bottom: 27px;
 }
 .payment_detail_form_tel input {
   width: 100%;
@@ -4617,6 +4669,10 @@ h2 {
 }
 
 @media (max-width: 575px) {
+  .payment_detail_form_tel {
+    height: 37px;
+    margin-bottom: 15px;
+  }
   .payment_detail_form_tel input {
     font-size: 12px;
     line-height: 1.2;
@@ -4626,11 +4682,23 @@ h2 {
   margin-bottom: 27px;
 }
 
+@media (max-width: 575px) {
+  .payment_detail_form_btns {
+    margin-bottom: 8px;
+  }
+}
 .payment_detail_form_btn {
   width: 100%;
   height: 61px;
 }
 
+@media (max-width: 575px) {
+  .payment_detail_form_btn {
+    height: 44px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
 .payment_detail_pd p, .payment_detail_pd a {
   font-size: 13px;
   font-weight: 400;
@@ -4642,6 +4710,12 @@ h2 {
   display: inline-block;
 }
 
+@media (max-width: 575px) {
+  .payment_detail_pd p, .payment_detail_pd a {
+    font-size: 10px;
+    line-height: 1.2;
+  }
+}
 .contacts {
   background: url("../img/bg_contacts.png") 50vw top/contain no-repeat;
   margin-bottom: 70px;
