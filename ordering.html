@@ -193,7 +193,7 @@
                <div class="ordering_content_title">
                   <p>Способ получения</p>
                </div>
-               <div class="ordering_stage_btns">
+               <div class="ordering_stage_btns ordering_stage_btns_stage2">
                  <button class="ordering_stage_btn_geo active">Самовывоз</button>
                  <button class="ordering_stage_btn_geo">Доставка</button>
                </div>
@@ -236,7 +236,7 @@
                </div>
             </div>
          </div>
-         <div class="ordering_stage">
+         <div class="ordering_stage ordering_stage_last">
             <div class="ordering_stage_num ordering_stage_num_last">
                <p>3</p>
             </div>
@@ -264,6 +264,9 @@
                   <p>Подтверждая заказ, Вы соглашаетесь с условиями <a href="#">политики конфиденциальности и правилами продажи</a></p>
                </div>
             </div>
+         </div>
+         <div class="ordering_submit">
+            <button class="btn ordering_submit_btn">Подтвердить заказ</button>
          </div>
       </div>
    </section>
@@ -508,6 +511,23 @@
             </div>
          </div>
          <!-- ----end mob_menu_bottom"----- -->
+         <!-- ----stert popup_inn--- -->
+      <section class="popup_inn">
+         <div class="popup_inn_wrap">
+            <div class="popup_inn_title">
+               <p>Введите данные</p>
+            </div>
+            <form class="popup_inn_form">
+               <div class="popup_inn_form_ihput">
+                  <input type="text" name="inn" id="inn" placeholder="ИНН  (обязательно)" required>
+               </div>
+               <div class="popup_inn_form_btns">
+                  <button type="submit" class="btn popup_login_form_btn">Продолжить</button>
+               </div>
+            </form>
+         </div>
+      </section>
+      <!-- ----end popup_inn--- -->
    <script src="js/ordering.js"></script>
    <script src="js/script.js"></script>
 </body>
