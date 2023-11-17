@@ -7027,6 +7027,8 @@ h2 {
 .lk_content_orders_accordion_content_row_pic img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .lk_content_orders_accordion_content_row_descr_name {
