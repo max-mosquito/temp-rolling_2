@@ -6157,7 +6157,7 @@ h2{
 // ----end productCard----
 // ----start lk----
 .lk {
-	margin-bottom: 177px;
+	margin-bottom: 171px;
 }
 @media (max-width:575px) {
 	.lk{
@@ -6181,15 +6181,16 @@ h2{
 @media (max-width:767px) {
 	.lk_content{
 		grid-template-columns: repeat(1, 1fr);
-		gap: 35px;
+		gap: 33px;
 	}
 }
 .lk_content_profile {
 }
 .lk_content_profile_title {
-	margin-bottom: 16px;
+	margin-bottom: 10px;
 	h2{
 		text-transform: none;
+		margin-left: -2px;
 	}
 }
 @media (max-width:575px) {
@@ -6205,17 +6206,18 @@ h2{
 }
 @media (max-width:575px){
 	.lk_content_profile_item{
-		margin-bottom: 20px;
+		margin-bottom: 21px;
 	}
 }
 .lk_content_profile_item_label {
-	margin-bottom: 7px;
+	margin-bottom: 5px;
 	font-size: 16px;
 	font-weight: 700;
 	line-height: 24px;
 }
 @media (max-width:575px){
 	.lk_content_profile_item_label{
+		margin-bottom: 7px;
 		font-size: 14px;
 		line-height: 1.2;
 	}
@@ -6232,19 +6234,20 @@ h2{
 	.lk_content_profile_item_data{
 		font-size: 14px;
 		line-height: 1.2;
+		padding: 16px 21px;
 	}
 }
 .lk_content_orders {
 }
 .lk_content_orders_title {
-	margin-bottom: 16px;
+	margin-bottom: 9px;
 	h2{
 		text-transform: none;
 	}
 }
 @media (max-width:575px){
 	.lk_content_orders_title{
-		margin-bottom: 25px;
+		margin-bottom: 21px;
 	}
 }
 .lk_content_orders_accordion {
@@ -6253,8 +6256,13 @@ h2{
 		margin: 0;
 	}
 }
+@media (max-width:575px) {
+	.lk_content_orders_accordion{
+		margin-bottom: 12px;
+	}
+}
 .lk_content_orders_accordion_label {
-	margin-bottom: 10px;
+	margin-bottom: 9px;
 	p{
 		font-size: 16px;
 		font-weight: 400;
@@ -6263,7 +6271,7 @@ h2{
 }
 @media (max-width:575px){
 	.lk_content_orders_accordion_label{
-		margin-bottom: 5px;
+		margin-bottom: 6px;
 	}
 }
 .lk_content_orders_accordion_item {
@@ -6273,11 +6281,16 @@ h2{
 	padding-left: 20px;
 	padding-right: 30px;
 }
+@media (max-width:575px) {
+	.lk_content_orders_accordion_item{
+		padding-right: 23px;
+	}
+}
 .lk_content_orders_accordion_header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 13px 49px 13px 0px;
+	padding: 13px 38px 13px 0px;
 	position: relative;
 	cursor: pointer;
 	&:after{
@@ -6286,15 +6299,21 @@ h2{
 		top: 50%;
 		transform: translateY(-50%) rotate(0deg);
 		right: 0px;
-		width: 16px;
-		height: 7px;
+		width: 20px;
+		height: 10px;
 		transition: 0.3s;
-		background: url("../img/chevron_down_black.svg");
+		background: url("../img/chevron_down_black.svg") center/contain no-repeat;
 	}
 	&.active{
 		&:after{
 			transform: translateY(-50%) rotate(180deg);
 		}
+	}
+}
+@media (max-width:575px) {
+	.lk_content_orders_accordion_header{
+		padding-top: 12px;
+		padding-bottom: 12px;
 	}
 }
 .lk_content_orders_accordion_header_type {
@@ -6306,7 +6325,7 @@ h2{
 	width: 16px;
 	height: 16px;
 	display: inline-block;
-	margin-right: 9px;
+	margin-right: 15px;
 }
 .lk_order_wait {
 	background: url("../img/clock_yellow.svg") center/contain no-repeat;
@@ -6340,10 +6359,17 @@ h2{
 }
 .lk_content_orders_accordion_content_rows {
 	margin-bottom: 30px;
+	padding-top: 19px;
+}
+@media (max-width:575px) {
+	.lk_content_orders_accordion_content_rows{
+		padding-top: 8px;
+		margin-bottom: 16px;
+	}
 }
 .lk_content_orders_accordion_content_row {
-	margin-bottom: 7px;
-	padding: 12px 15px;
+	margin-bottom: 12px;
+	padding: 12px 15px 6px;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.25);
 	display: flex;
 	align-items: center;
@@ -6351,6 +6377,7 @@ h2{
 @media (max-width:575px) {
 	.lk_content_orders_accordion_content_row{
 		padding: 0 15px 10px 0;
+		margin-bottom: 10px;
 	}
 }
 .lk_content_orders_accordion_content_row_pic {
@@ -6373,7 +6400,7 @@ h2{
 @media (max-width:575px){
 	.lk_content_orders_accordion_content_row_descr_name{
 		font-size: 14px;
-		line-height: 1.2;
+		line-height: 18px;
 		margin-bottom: 8px;
 	}
 }
@@ -6401,14 +6428,16 @@ h2{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0 15px;
-	margin-bottom: 25px;
+	padding-left: 15px;
+	margin-bottom: 30px;
 }
 @media (max-width:575px) {
 	.lk_content_orders_accordion_content_bottom{
 		flex-direction: column;
 		justify-content: center;
 		align-items: flex-start;
+		padding: 0;
+		margin-bottom: 18px;
 	}
 }
 .lk_content_orders_accordion_content_bottom_sum {
