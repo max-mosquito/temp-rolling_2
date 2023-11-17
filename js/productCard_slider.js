@@ -6,7 +6,7 @@ const productCardSlider = new Swiper('.productCard_recomend_slider', {
  
    breakpoints: {
       '300': {
-        slidesPerView: 2.2,
+        slidesPerView: 2.25,
         spaceBetween: 10,
       },
       '575': {
@@ -17,7 +17,7 @@ const productCardSlider = new Swiper('.productCard_recomend_slider', {
          slidesPerView: 3.1,
        },
        '991': {
-         slidesPerView: 4,
+         slidesPerView: 4.4,
          spaceBetween: 17,
        },
     },
