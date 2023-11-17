@@ -6476,6 +6476,7 @@ h2{
 @media (max-width:575px) {
 	.cartMain{
 		margin-top: 40px;
+		margin-bottom: 53px;
 	}
 }
 .cartMain_wrap {
@@ -6483,10 +6484,11 @@ h2{
 .cartMain_title {
 	display: flex;
 	align-items: baseline;
-	margin-bottom: 12px;
+	margin-bottom: 10px;
 	h2{
 		text-transform: none;
 		margin-right: 20px;
+		margin-left: -2px;
 	}
 	p{
 		font-size: 18px;
@@ -6494,8 +6496,27 @@ h2{
 		line-height: 27px;
 	}
 }
+@media (max-width:575px) {
+	.cartMain_title{
+		margin-bottom: 16px;
+		h2{
+			margin-right: 10px;
+			margin-left: 0;
+		}
+		p{
+			font-size: 14px;
+			line-height: 21px;
+		}
+	}
+}
 .cartMain_checkbox_wrap {
-	margin-bottom: 20px;
+	margin-bottom: 28px;
+	padding-left: 20px;
+}
+@media (max-width:575px) {
+	.cartMain_checkbox_wrap{
+		padding-left: 0;
+	}
 }
 .label_cartMain_checkbox{
 	position: relative;
@@ -6509,9 +6530,8 @@ h2{
 		content: "";
 		width: 15px;
 		height: 15px;
-		top: 50%;
+		top: 0%;
 		left: 0;
-		transform: translateY(-50%);
 		border-radius: 2px;
 		border:1px solid $bk;
 	}
@@ -6557,7 +6577,7 @@ h2{
 }
 @media (max-width:575px) {
 	.cartMain_content{
-		margin-bottom: 50px;
+		margin-bottom: 0px;
 	}
 }
 .cartMain_foods_list {
@@ -6567,8 +6587,8 @@ h2{
 	grid-template-columns: 15px 133px auto;
 	grid-template-rows: repeat(2, auto);
 	column-gap: 30px;
-	padding: 26px 20px 23px;
-	margin-bottom: 10px;
+	padding: 29px 15px 23px 20px;
+	margin-bottom: 0px;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 	&:last-child{
 		margin-bottom: 0;
@@ -6578,6 +6598,7 @@ h2{
 	.cartMain_foods_item{
 		grid-template-columns: repeat(6, 1fr	);
 		padding: 0 0 20px;
+		margin-bottom: 19px;
 	}
 }
 .cartMain_foods_item_checkbox {
@@ -6589,10 +6610,15 @@ h2{
 		grid-column: 1/2;
 	}
 }
-.label_cartMain_checkbox {
-	
-}
 .checkAll {
+}
+@media (max-width:575px) {
+	.checkAll{
+		padding-left: 35px;
+		&:before{
+			top: 5px;
+		}
+	}
 }
 .checkbox {
 }
@@ -6607,6 +6633,7 @@ h2{
 	.cartMain_foods_item_pic{
 		grid-row: 2/3;
 		grid-column: 1/3;
+		padding-top: 7px;
 	}
 }
 .cartMain_foods_item_name {
@@ -6618,6 +6645,7 @@ h2{
 		font-weight: 700;
 		line-height: 24px;
 		margin-right: 20px;
+		text-transform: uppercase;
 	}
 	span{
 		flex: 0 0 14px;
@@ -6633,6 +6661,7 @@ h2{
 	.cartMain_foods_item_name{
 		grid-row: 1/2;
 		grid-column: 2/-1;
+		margin-left: -10px;
 		p{
 			font-size: 14px;
 			line-height: 1.2;
@@ -6648,6 +6677,8 @@ h2{
 	.cartMain_foods_item_info{
 		grid-row: 2/3;
 		grid-column: 3/-1;
+		align-items: center;
+		padding-top: 7px;
 	}
 }
 .cartMain_foods_item_counter {
@@ -6658,6 +6689,11 @@ h2{
 	border:1px solid rgba(0, 0, 0, 0.5);
 	border-radius: 2px;
 	padding: 0 14px;
+}
+@media (max-width:575px) {
+	.cartMain_foods_item_counter{
+		align-self: flex-start;
+	}
 }
 .cartMain_foods_item_counter_dec {
 	p{
@@ -6695,14 +6731,19 @@ h2{
 }
 .cartMain_order {
 	box-shadow: 0px 22px 41px 0px #D7D7D757;
-	padding: 30px 30px 25px;
+	padding: 40px 30px 25px 36px;
 	border-radius: 2px;
+}
+@media (max-width:575px) {
+	.cartMain_order{
+		padding: 40px 0 25px;
+	}
 }
 .cartMain_order_total {
 	p{
 		font-size: 14px;
 		font-weight: 400;
-		line-height: 21px;
+		line-height: 1;
 	}
 }
 .cartMain_order_descr {
@@ -6731,18 +6772,18 @@ h2{
 	line-height: 21px;
 }
 .cart_recomend {
-	margin-bottom: 220px;
+	margin-bottom: 170px;
 }
 @media (max-width:575px) {
 	.cart_recomend{
-		margin-bottom: 70px;
+		margin-bottom: 104px;
 	}
 }
 .cart_recomend_wrap {
 }
-@media (max-width:575px){
+@media (max-width:575px) {
 	.cart_recomend_wrap{
-		padding: 0;
+		padding-right: 0;
 	}
 }
 .cart_recomend_title {
@@ -6753,9 +6794,9 @@ h2{
 		line-height: 33px;
 	}
 }
-@media (max-width:575px){
+@media (max-width:575px) {
 	.cart_recomend_title{
-		padding-left: 20px;
+		margin-bottom: 20px;
 	}
 }
 .cart_recomend_content{
@@ -6822,7 +6863,7 @@ h2{
 .cart_recomend_slider_title {
 	max-width: 150px;
 	width: 100%;
-	margin-bottom: 35px;
+	margin-bottom: 39px;
 	p{
 		font-size: 13px;
 		font-weight: 700;
@@ -6832,7 +6873,7 @@ h2{
 }
 @media (max-width:575px){
 	.cart_recomend_slider_title{
-		margin-bottom: 10px;
+		margin-bottom: 18px;
 		p{
 			font-size: 12px;
 			line-height: 1.2;
@@ -6850,7 +6891,7 @@ h2{
 	p{
 		font-size: 21px;
 		font-weight: 700;
-		line-height: 32px;
+		line-height: 1;
 		span{
 			font-size: 12px;
 			line-height: 1.2;
@@ -6862,7 +6903,7 @@ h2{
 	.cart_recomend_slider_bottom_price_pc{
 		p{
 			font-size: 16px;
-			line-height: 1.2;
+			line-height: 1;
 		}
 	}
 }

@@ -7130,6 +7130,7 @@ h2 {
 @media (max-width: 575px) {
   .cartMain {
     margin-top: 40px;
+    margin-bottom: 53px;
   }
 }
 .cartMain_title {
@@ -7139,11 +7140,12 @@ h2 {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 .cartMain_title h2 {
   text-transform: none;
   margin-right: 20px;
+  margin-left: -2px;
 }
 .cartMain_title p {
   font-size: 18px;
@@ -7151,10 +7153,29 @@ h2 {
   line-height: 27px;
 }
 
+@media (max-width: 575px) {
+  .cartMain_title {
+    margin-bottom: 16px;
+  }
+  .cartMain_title h2 {
+    margin-right: 10px;
+    margin-left: 0;
+  }
+  .cartMain_title p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
 .cartMain_checkbox_wrap {
-  margin-bottom: 20px;
+  margin-bottom: 28px;
+  padding-left: 20px;
 }
 
+@media (max-width: 575px) {
+  .cartMain_checkbox_wrap {
+    padding-left: 0;
+  }
+}
 .label_cartMain_checkbox {
   position: relative;
   padding-left: 25px;
@@ -7168,10 +7189,8 @@ h2 {
   content: "";
   width: 15px;
   height: 15px;
-  top: 50%;
+  top: 0%;
   left: 0;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
   border-radius: 2px;
   border: 1px solid #000000;
 }
@@ -7223,7 +7242,7 @@ h2 {
 }
 @media (max-width: 575px) {
   .cartMain_content {
-    margin-bottom: 50px;
+    margin-bottom: 0px;
   }
 }
 .cartMain_foods_item {
@@ -7236,8 +7255,8 @@ h2 {
   -webkit-column-gap: 30px;
      -moz-column-gap: 30px;
           column-gap: 30px;
-  padding: 26px 20px 23px;
-  margin-bottom: 10px;
+  padding: 29px 15px 23px 20px;
+  margin-bottom: 0px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
 .cartMain_foods_item > *:nth-child(1) {
@@ -7273,6 +7292,7 @@ h2 {
     -ms-grid-columns: (1fr)[6];
     grid-template-columns: repeat(6, 1fr);
     padding: 0 0 20px;
+    margin-bottom: 19px;
   }
 }
 .cartMain_foods_item_checkbox {
@@ -7288,6 +7308,14 @@ h2 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
+  }
+}
+@media (max-width: 575px) {
+  .checkAll {
+    padding-left: 35px;
+  }
+  .checkAll:before {
+    top: 5px;
   }
 }
 .cartMain_foods_item_pic {
@@ -7307,6 +7335,7 @@ h2 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-column: 1/3;
+    padding-top: 7px;
   }
 }
 .cartMain_foods_item_name {
@@ -7325,6 +7354,7 @@ h2 {
   font-weight: 700;
   line-height: 24px;
   margin-right: 20px;
+  text-transform: uppercase;
 }
 .cartMain_foods_item_name span {
   -webkit-box-flex: 0;
@@ -7344,6 +7374,7 @@ h2 {
     -ms-grid-row-span: 1;
     grid-row: 1/2;
     grid-column: 2/-1;
+    margin-left: -10px;
   }
   .cartMain_foods_item_name p {
     font-size: 14px;
@@ -7368,6 +7399,10 @@ h2 {
     -ms-grid-row-span: 1;
     grid-row: 2/3;
     grid-column: 3/-1;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 7px;
   }
 }
 .cartMain_foods_item_counter {
@@ -7386,6 +7421,12 @@ h2 {
   padding: 0 14px;
 }
 
+@media (max-width: 575px) {
+  .cartMain_foods_item_counter {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+}
 .cartMain_foods_item_counter_dec p {
   font-size: 25px;
   font-weight: 400;
@@ -7418,14 +7459,19 @@ h2 {
 .cartMain_order {
   -webkit-box-shadow: 0px 22px 41px 0px rgba(215, 215, 215, 0.3411764706);
           box-shadow: 0px 22px 41px 0px rgba(215, 215, 215, 0.3411764706);
-  padding: 30px 30px 25px;
+  padding: 40px 30px 25px 36px;
   border-radius: 2px;
 }
 
+@media (max-width: 575px) {
+  .cartMain_order {
+    padding: 40px 0 25px;
+  }
+}
 .cartMain_order_total p {
   font-size: 14px;
   font-weight: 400;
-  line-height: 21px;
+  line-height: 1;
 }
 
 .cartMain_order_descr {
@@ -7462,17 +7508,17 @@ h2 {
 }
 
 .cart_recomend {
-  margin-bottom: 220px;
+  margin-bottom: 170px;
 }
 
 @media (max-width: 575px) {
   .cart_recomend {
-    margin-bottom: 70px;
+    margin-bottom: 104px;
   }
 }
 @media (max-width: 575px) {
   .cart_recomend_wrap {
-    padding: 0;
+    padding-right: 0;
   }
 }
 .cart_recomend_title {
@@ -7486,7 +7532,7 @@ h2 {
 
 @media (max-width: 575px) {
   .cart_recomend_title {
-    padding-left: 20px;
+    margin-bottom: 20px;
   }
 }
 .cart_recomend_content {
@@ -7566,7 +7612,7 @@ h2 {
 .cart_recomend_slider_title {
   max-width: 150px;
   width: 100%;
-  margin-bottom: 35px;
+  margin-bottom: 39px;
 }
 .cart_recomend_slider_title p {
   font-size: 13px;
@@ -7577,7 +7623,7 @@ h2 {
 
 @media (max-width: 575px) {
   .cart_recomend_slider_title {
-    margin-bottom: 10px;
+    margin-bottom: 18px;
   }
   .cart_recomend_slider_title p {
     font-size: 12px;
@@ -7599,7 +7645,7 @@ h2 {
 .cart_recomend_slider_bottom_price_pc p {
   font-size: 21px;
   font-weight: 700;
-  line-height: 32px;
+  line-height: 1;
 }
 .cart_recomend_slider_bottom_price_pc p span {
   font-size: 12px;
@@ -7610,7 +7656,7 @@ h2 {
 @media (max-width: 575px) {
   .cart_recomend_slider_bottom_price_pc p {
     font-size: 16px;
-    line-height: 1.2;
+    line-height: 1;
   }
 }
 .cart_recomend_slider_bottom_price_mass p {

@@ -15,7 +15,7 @@ const productCardSlider = new Swiper('.cart_recomend_slider', {
          slidesPerView: 3.1,
        },
        '991': {
-         slidesPerView: 4,
+         slidesPerView: 4.4,
          spaceBetween: 17,
        },
     },
